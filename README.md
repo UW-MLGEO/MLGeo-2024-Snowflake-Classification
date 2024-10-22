@@ -14,5 +14,15 @@ For curating the training dataset of this project, ice crystal images from the f
 ### **Project Objectives:**
 To create an AI algorithm (Convolutional Neural Network, CCN) to identify and classify thousands of high-resolution ice crystal images according to snowflake type (i.e. to create an ML-based ice crystal habit classification algorithm). The goal is for this alogorithm to replace manual snowflake classification in research studies, an approach that is unreproducible and subject to human error, providing an objective, faster solution for identifying ice crystals of popular interest in snow microphysics studies, such as dendrites. 
 
-
-
+### **Creating the snow_classfication_env environment:**
+The required packages and dependencies are given in the [snow_classification_env.yml](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/snow_classification_env.yml) file. 
+Download this file and run the following in the command line to create a Conda environment compatible with running scripts and notebooks in this repository.
+```bash 
+conda env create -f snow_classification_env.yml
+```
+Activate this environment before running notebooks and scripts
+```bash 
+conda activate snow_classification_env
+```
+### **About the Python notebooks in this repository:**
+<insert "High-level description of each script/notebook" >
