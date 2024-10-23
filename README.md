@@ -22,7 +22,7 @@ To create an AI algorithm (Convolutional Neural Network, CCN) to identify and cl
 The required packages and dependencies are given in the [snow_classification_env.yml](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/snow_classification_env.yml) file. 
 Download this file and run the following prompt in the command line to create a Conda environment compatible with running scripts and notebooks in this repository.
 ```bash 
-conda env create -f snow_classification_env.yml
+conda env create -n snow_classification_env -f snow_classification_env.yml
 ```
 Activate this environment before running notebooks and scripts
 ```bash 
