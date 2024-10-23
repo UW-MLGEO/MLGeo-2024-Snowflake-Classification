@@ -11,6 +11,10 @@ This project will leverage ice crystal images (in PNG format) photographed by th
 
 For curating the training dataset of this project, ice crystal images from the following flight dates were selected: 2020-02-07 (sample area: Pennslyvannia), 2022-02-17 (sample area: Illinois), 2023-01-23 (sample area: Maine), and 2023-02-14 (sample area: Minnesota). These dates were selected for the unique storm structures sampled. In-cloud sampling of these storms occurred at multiple temperature levels, ensuring a diverse assortment of ice crystal images sampled, which is a requirement for constructing a training dataset representative of many snowflake types. 
 
+### **Registering for a NASA Earthdata Login Profile:**
+
+To download the IMPACTS P-3 met/nav data on the NASA Global Hydrometeorology Resource (GCHR) website, an Earthdata Login profile is needed. Registering is free and can be done [here](https://urs.earthdata.nasa.gov/users/new?client_id=OLpAZlE4HqIOMr0TYqg7UQ&redirect_uri=https%3A%2F%2Fd53njncz5taqi.cloudfront.net%2Furs_callback&response_type=code&state=https%3A%2F%2Fsearch.earthdata.nasa.gov%2Fsearch%3Fq%3Dp3metnavimpacts%26ee%3Dprod)
+
 ### **Project Objectives:**
 To create an AI algorithm (Convolutional Neural Network, CCN) to identify and classify thousands of high-resolution ice crystal images according to snowflake type (i.e. to create an ML-based ice crystal habit classification algorithm). The goal is for this alogorithm to replace manual snowflake classification in research studies, a tedious approach that is unreproducible and subject to human error, in order to provide an objective, reliable solution for identifying ice crystals of popular interest in snow microphysics studies, such as dendrites. 
 
