@@ -60,3 +60,5 @@ A common type of polycrystal that consists of plates joined at their edges, ofte
 ## **Tiny**
 Small fragments of ice crystals, most likely from shattering within the PHIPS probe. Could also be frozen water droplets. These fragments can come in a variety of shapes. Images selected in this category have varied morphologies but their sizes are all tiny relative to the above ice crystals. 
 <img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/tiny_examples.png" alt="tiny example" width="1000">
+
+Folders were created for each category, in which the images were placed (40 images total per category). To upload to Github, the folders were compressed into tar.gz files, labled by their category.
