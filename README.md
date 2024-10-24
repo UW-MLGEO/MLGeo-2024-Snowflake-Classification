@@ -11,6 +11,16 @@ This project will leverage ice crystal images (in PNG format) photographed by th
 
 For curating the training dataset of this project, ice crystal images from the following flight dates were selected: 2020-02-07 (sample area: Pennslyvannia), 2022-02-17 (sample area: Illinois), 2023-01-23 (sample area: Maine), and 2023-02-14 (sample area: Minnesota). These dates were selected for the unique storm structures sampled. In-cloud sampling of these storms occurred at multiple temperature levels, ensuring a diverse assortment of ice crystal images sampled, which is a requirement for constructing a training dataset representative of many snowflake types. 
 
+### **Data Modalities and Formats:**
+* PHIPS ice crystal dataset
+  * Consists of ice crystal images in .PNG format, taken in-cloud
+  * Sampling rate: 1 Hz for duration of flight
+* P-3 aircraft meteorological/navigation dataset
+  * Contains time-series numerical data including geographic (e.g. latitude, longitude coordinates), meteorological (e.g. temperature, dewpoint, wind speed) and altitude data (e.g. altitude, pitch, roll, yaw) reported from the P-3 aircraft during each flight
+  * Sampling rate: 1 Hz for duration of flight
+  * Format: ICARTT (.ict)
+    * ICARTT files: an ICARTT file is a text-based format for atmospheric research data, developed to ensure consistency in data sharing. It contains tabular data and headers with information on measurements, units, instruments, and data quality. Lengthy documentation on the ICARTT file format standards can be found [here](https://www.earthdata.nasa.gov/s3fs-public/imported/ESDS-RFC-029v2.pdf)
+
 ### **Registering for a NASA Earthdata Login Profile:**
 
 To download the IMPACTS P-3 met/nav data on the NASA Global Hydrometeorology Resource (GCHR) website, an Earthdata Login profile is needed. Registering is free and can be done [here](https://urs.earthdata.nasa.gov/users/new?client_id=OLpAZlE4HqIOMr0TYqg7UQ&redirect_uri=https%3A%2F%2Fd53njncz5taqi.cloudfront.net%2Furs_callback&response_type=code&state=https%3A%2F%2Fsearch.earthdata.nasa.gov%2Fsearch%3Fq%3Dp3metnavimpacts%26ee%3Dprod)
