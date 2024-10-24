@@ -23,20 +23,30 @@ Large ice crystals containing smaller single ice crystals (could be a mixed of d
 ## **Bullet rosettes**
 Column ice crystals resembling bullets joined together at their tips. 
 
-## **Plates**
-Single ice crystals shaped like a hexagon. 
-
 ## **Capped columns**
-Column ice crystals with plates attached at either end.
+Column ice crystals with plates attached at either end. Sometimes the plates exhibit branched growth. 
 
 ## **Columns**
 Single ice crystals shapped like a column or bullet.
 
 ## **Dendrites**
-Six-sided branched ice crystal.
+Six-sided branched ice crystal. This cateogry includes ice crystals with branched and side-branched growth. 
 
 ## **Graupel**
 A heavily rimed ice crystal (i.e. an ice crystal of any type covered completely with frozen water droplets to the point of no recognition). The shape of these ice crystals varies. They tend to look like a fuzzy, opague blob.
 
+## **Needles**
+As the name suggests, these ice crystals are long and thin, resembling a sewing needle. They oftentimes are found in clusters.
 
+## **Plates**
+Single ice crystals shaped like a hexagon. Mildly rimed plates are included in this category as well (i.e. some liquid water accretion on the ice crystal, but not enough to make its shape unrecognizable)
+
+## **Polycrystals**
+Complex ice crystals that appear to have branches with plate growth and other ice fragments growing off them. Their centers tend to be opague. This category excludes side-planes, which were identified separately.
+
+## **Side-planes**
+A common type of polycrystal that consists of plates joined at their edges, oftentimes looked to be clumped together. 
+
+## **Tiny**
+Small fragments of ice crystals, most likely from shattering within the PHIPS probe. Could also be frozen water droplets. These fragments can come in a variety of shapes. Images selected in this category have varied morphologies but their sizes are all tiny relative to the above ice crystals. 
 
