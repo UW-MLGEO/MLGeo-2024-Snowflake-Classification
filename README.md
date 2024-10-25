@@ -5,13 +5,69 @@
 The "MLGEO2024_Snowflake_Classification" project aims to develop a robust AI algorithm utilizing Convolutional Neural Networks (CNNs) to identify and classify high-resolution ice crystal images according to snowflake type. This initiative seeks to automate the classification process, which is traditionally carried out manually—a method that is often time-consuming, prone to human error, and lacks reproducibility.
 
 ### **Importance of Snowflake Classification**
-Snowflake classification is vital for understanding microphyscial processes occurring within winter storms, which has implications for snowfall accumulation. By providing a reliable, objective classification system, this project will enhance the scientific community's ability to study and interpret snow microphysics, which plays a crucial role in winter weather systems.
+Snowflake classification is vital for understanding microphysical processes occurring within winter storms, which has implications for snowfall accumulation. By providing a reliable, objective classification system, this project will enhance the scientific community's ability to study and interpret snow microphysics, which plays a crucial role in winter weather systems.
 
 ### **Objectives**
 The primary objectives of this project include:
 * **Automating Classification**: Replace manual snowflake classification with a machine learning-based algorithm to improve efficiency and accuracy.
-* **Data-Driven Insights**: Leverage statistical analyses and visualizations to gain insights into the characteristics and distributions of different ice crystal types. 
+* **Data-Driven Insights**: Leverage statistical analyses and visualizations to gain insights into the characteristics and distributions of different ice crystal types.
 
+## **Snowflake classes**
+
+To better understand the aim of the project, it is necessary to be familiar with some of the  main types of snowflakes included in the data. These are, accompanied by brief desciptions:
+
+**Plates**
+
+Ice crystals shaped like a hexagon.
+
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/plates_examples.png" alt="Plate" width="700">
+
+**Columns**
+
+Ice crystals shaped like a column, some having a thinner shape closer to a needle.
+
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/columns_examples.png" alt="Column" width="700">
+
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/capped_columns_examples.png" alt="Capped column" width="700">
+
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/needles_examples.png" alt="Needle" width="700">
+
+**Side-planes**
+
+Multiple plates joined together.
+
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/side_planes_examples.png" alt="Side plane" width="700">
+
+**Bullet rosettes**
+
+Multiple columns joined together.
+
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/bullet_rosettes_examples.png" alt="Bullet rosette" width="700">
+
+**Dendrites**
+
+Six-sided branched ice crystals.
+
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/dendrites_examples.png" alt="Dendrite" width="700">
+
+
+**Graupels**
+
+Ice crystals covered completely with frozen water droplets such that they look like fuzzy blobs.
+
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/graupel_examples.png" alt="Graupel" width="700">
+
+**Aggregates**
+
+Large ice crystals composed of many smaller crystals.
+
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/aggregates_examples.png" alt="Aggregate" width="700">
+
+**Irregulars**
+
+Crystals that do not fit any of the above categories, for example, tiny cristals.
+
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/tiny_examples.png" alt="Tiny" width="700">
 
 ## **Data Source:**
 
@@ -72,4 +128,4 @@ To download the IMPACTS P-3 met/nav data on the NASA Global Hydrometeorology Res
   
 - [EDA_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/EDA_PHIPS.ipynb): For exploring the structure and key statistical characteristcs of the `PHIPS_CrystalHabitAI_Dataset.nc` AI-ready dataset. Basic statistics of the pixel intensities across all the PHIPS images are inspected, along with a correlation matrix that explores linear relationshps between image intensity and other data attributes such as habit type and temperature.
   
-- [dimensionality_reduction_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/dimensionality_reduction_PHIPS.ipynb): For analyzingthe dimensions of the `PHIPS_CrystalHabitAI_Dataset.nc` AI-ready dataset and implementing linear (Principle Component Analysis, PCA) and non-linear (t-Distributed Stochastic Neighbor Embedding, t-SNE) dimension reduction techniques to tease out linear and non-linear relationships, respectively, in the data.
+- [dimensionality_reduction_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/dimensionality_reduction_PHIPS.ipynb): For analyzing the dimensions of the `PHIPS_CrystalHabitAI_Dataset.nc` AI-ready dataset and implementing linear (Principle Component Analysis, PCA) and non-linear (t-Distributed Stochastic Neighbor Embedding, t-SNE) dimension reduction techniques to tease out linear and non-linear relationships, respectively, in the data.
