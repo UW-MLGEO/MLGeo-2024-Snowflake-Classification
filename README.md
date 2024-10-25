@@ -29,23 +29,37 @@ To download the IMPACTS P-3 met/nav data on the NASA Global Hydrometeorology Res
 ### **Project Objectives:**
 To create an AI algorithm (Convolutional Neural Network, CCN) to identify and classify thousands of high-resolution ice crystal images according to snowflake type (i.e. to create an ML-based ice crystal habit classification algorithm). The goal is for this alogorithm to replace manual snowflake classification in research studies, a tedious approach that is unreproducible and subject to human error, in order to provide an objective, reliable solution for identifying ice crystals of popular interest in snow microphysics studies, such as dendrites. 
 
-### **Creating the snow_classfication_env environment:**
-The required packages and dependencies are given in the [snow_classification_env.yml](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/snow_classification_env.yml) file. 
-Download this file and run the following prompt in the command line to create a Conda environment compatible with running scripts and notebooks in this repository.
+## Getting Started 
+
+To get started with the "MLGEO2024_Snowflake_Classification" project, follow these steps to clone the repository and set up the environment.
+
+### **Prerequisites:**
+* `Python 3.9.12` or later
+* Conda for managing dependencies (recommended)
+* Git cloning the repository
+
+### **1. Cloning the repository**
+Start by cloning the repository to your local machine:
+```bash 
+git clone https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification.git
+cd MLGEO2024_Snowflake_Classification
+```
+### **2. Set Up the Environment**
+Create a conda environment with the necessary dependencies using the `snow_classification_env.yml` file:
 ```bash 
 conda env create -n snow_classification_env -f snow_classification_env.yml
-```
-Activate this environment before running notebooks and scripts
-```bash 
 conda activate snow_classification_env
 ```
-### **About the Python notebooks in this repository:**
+This will install all required packages, including libraries for data processing, machine learning, and visualization.
+
+
+### **Descriptions of the Python notebooks in this repository:**
 - [download_data_NASA_GHRC.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/download_data_NASA_GHRC.ipynb): Instructions for locally downloading from the NASA GHRC website the folders containing the raw PHIPS images (in .PNG format), as well as the .ict files for the P-3 aircraft meteorological/navigational datasets. Due to the large size of the raw PHIPS image data, it is recommended to run the download prompts in the command line.
   
-- [cleaning_data_P3_nav.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/cleaning_data_P3_nav.ipynb): For cleaning the P-3 aircraft met/nav .ict data files using a read routine adapted from the [IMPACTS Github repository](https://github.com/joefinlon/impacts_tools.git). Cleaned data is saved as NetCDF files. Manual inspection/selection of the raw PHIPS images was necessary for cleaning the image dataset, hence why no cleaning notebook for it is provided. Please refer to the README.md under data/clean/ that describes in detail the manual selection process for the images.
+- [cleaning_data_P3_nav.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/cleaning_data_P3_nav.ipynb): For cleaning the P-3 aircraft met/nav .ict data files using a read routine adapted from the [IMPACTS Github repository](https://github.com/joefinlon/impacts_tools.git). Cleaned data is saved as NetCDF files. Manual inspection/selection of the raw PHIPS images was necessary for cleaning the image dataset, hence why no cleaning notebook for it is provided. Please refer to the README.md under `data/clean/` that describes in detail the manual selection process for the images.
   
-- [prepare_AI_ready_data_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/prepare_AI_ready_data_PHIPS.ipynb): For reading in the cleaned PHIPS image data and the P-3 aircraft met/nav data and constructing an xarray.Dataset with the images converted to numpy arrays and appropriate meta data attributes included from the P-3 met/nav dataset. This AI-ready dataset is saved as a NetCDF file and manually uploaded to Google Drive (file name: PHIPS_CrystalHabitAI_Dataset.nc) as opposed to Github due to repository storage constraints. Please refer to the README.md in data/ai_ready/ for downloading the dataset.
+- [prepare_AI_ready_data_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/prepare_AI_ready_data_PHIPS.ipynb): For reading in the cleaned PHIPS image data and the P-3 aircraft met/nav data and constructing an xarray.Dataset with the images converted to numpy arrays and appropriate meta data attributes included from the P-3 met/nav dataset. This AI-ready dataset is saved as a NetCDF file and manually uploaded to Google Drive (file name: `PHIPS_CrystalHabitAI_Dataset.nc`) as opposed to Github due to repository storage constraints. Please refer to the README.md in `data/ai_ready/` for downloading the dataset.
   
-- [EDA_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/EDA_PHIPS.ipynb): For exploring the structure and key statistical characteristcs of the "PHIPS_CrystalHabitAI_Dataset.nc" AI-ready dataset. Basic statistics of the pixel intensities across all the PHIPS images are inspected, along with a correlation matrix that explores linear relationshps between image intensity and other data attributes such as habit type and temperature.
+- [EDA_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/EDA_PHIPS.ipynb): For exploring the structure and key statistical characteristcs of the `PHIPS_CrystalHabitAI_Dataset.nc` AI-ready dataset. Basic statistics of the pixel intensities across all the PHIPS images are inspected, along with a correlation matrix that explores linear relationshps between image intensity and other data attributes such as habit type and temperature.
   
-- [dimensionality_reduction_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/dimensionality_reduction_PHIPS.ipynb): For analyzingthe dimensions of the "PHIPS_CrystalHabitAI_Dataset.nc" AI-ready dataset and implementing linear (Principle Component Analysis, PCA) and non-linear (t-Distributed Stochastic Neighbor Embedding, t-SNE) dimension reduction techniques to tease out linear and non-linear relationships, respectively, in the data.
+- [dimensionality_reduction_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/dimensionality_reduction_PHIPS.ipynb): For analyzingthe dimensions of the `PHIPS_CrystalHabitAI_Dataset.nc` AI-ready dataset and implementing linear (Principle Component Analysis, PCA) and non-linear (t-Distributed Stochastic Neighbor Embedding, t-SNE) dimension reduction techniques to tease out linear and non-linear relationships, respectively, in the data.
