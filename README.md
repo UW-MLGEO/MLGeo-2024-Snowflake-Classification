@@ -1,5 +1,5 @@
 # MLGEO2024_Snowflake_Classification
-## Contributors: Valeria Garcia (ESS 569) and Carlos Palma Bernal (ESS 469)
+### Contributors: Valeria Garcia (ESS 569) and Carlos Palma Bernal (ESS 469)
 
 This repository is for the UW-MLGEO 2024 final project.
 
