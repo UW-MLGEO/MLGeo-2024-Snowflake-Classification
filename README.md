@@ -20,60 +20,60 @@ To better understand the aim of the project, it is necessary to be familiar with
 
 Ice crystals shaped like a hexagon.
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/plates_examples.png" alt="Plate" width="700">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/plates_examples.png" alt="Plate" width="700">
 
 **Columns**
 
 Ice crystals shaped like a column, some having a thinner shape closer to a needle.
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/columns_examples.png" alt="Column" width="700">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/columns_examples.png" alt="Column" width="700">
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/capped_columns_examples.png" alt="Capped column" width="700">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/capped_columns_examples.png" alt="Capped column" width="700">
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/needles_examples.png" alt="Needle" width="700">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/needles_examples.png" alt="Needle" width="700">
 
 **Side-planes**
 
 Multiple plates joined together.
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/side_planes_examples.png" alt="Side plane" width="700">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/side_planes_examples.png" alt="Side plane" width="700">
 
 **Bullet rosettes**
 
 Multiple columns joined together.
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/bullet_rosettes_examples.png" alt="Bullet rosette" width="700">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/bullet_rosettes_examples.png" alt="Bullet rosette" width="700">
 
 **Dendrites**
 
 Six-sided branched ice crystals.
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/dendrites_examples.png" alt="Dendrite" width="700">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/dendrites_examples.png" alt="Dendrite" width="700">
 
 
 **Graupels**
 
 Ice crystals covered completely with frozen water droplets such that they look like fuzzy blobs.
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/graupel_examples.png" alt="Graupel" width="700">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/graupel_examples.png" alt="Graupel" width="700">
 
 **Aggregates**
 
 Large ice crystals composed of many smaller crystals.
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/aggregates_examples.png" alt="Aggregate" width="700">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/aggregates_examples.png" alt="Aggregate" width="700">
 
 **Irregulars**
 
 Crystals that do not fit any of the above categories, for example, tiny cristals.
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/tiny_examples.png" alt="Tiny" width="700">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/tiny_examples.png" alt="Tiny" width="700">
 
 ## **Data Source:**
 
 This project will utilize ice crystal images (in PNG format) photographed by the Particle Habit Imaging and Polar Scattering Probe (PHIPS) during the Investigation of Microphysics and Precipitation in Atlantic Coast-Threatening Snowstorms (IMPACTS) for both the training and testing datasets. IMPACTS was a NASA field campaign focused on studying winter storms during the 2020, 2022, and 2023 winter seasons (January-February), using aircraft to collect microphysical and remote sensing observations across multiple U.S. northeastern and Midwestern winter storms. Along with the ice crystal images, meteorological and navigation data from the P-3 aircraft (on which the PHIPS was onboard) will be used to provide temperature and spatial/geographic information for the ice crystals images. 
 
-<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/IMPACTS_logo.png" alt="IMPACTS logo" width="300"> <img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/PHIPS_instrument.png" alt="PHIPS Instrument" width="425">
+<img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/IMPACTS_logo.png" alt="IMPACTS logo" width="300"> <img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/images/PHIPS_instrument.png" alt="PHIPS Instrument" width="425">
 
 For curating the training dataset of this project, ice crystal images from the following flight dates were selected: 2020-02-07 (sample area: Pennslyvannia), 2022-02-17 (sample area: Illinois), 2023-01-23 (sample area: Maine), and 2023-02-14 (sample area: Minnesota). These dates were selected for the unique storm structures sampled. In-cloud sampling of these storms occurred at multiple temperature levels, ensuring a diverse assortment of ice crystal images sampled, which is a requirement for constructing a training dataset representative of many snowflake types. 
 
