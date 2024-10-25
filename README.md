@@ -41,11 +41,11 @@ conda activate snow_classification_env
 ```
 ### **About the Python notebooks in this repository:**
 - [download_data_NASA_GHRC.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/download_data_NASA_GHRC.ipynb): Instructions for locally downloading from the NASA GHRC website the folders containing the raw PHIPS images (in .PNG format), as well as the .ict files for the P-3 aircraft meteorological/navigational datasets. Due to the large size of the raw PHIPS image data, it is recommended to run the download prompts in the command line.
-- 
+  
 - [cleaning_data_P3_nav.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/cleaning_data_P3_nav.ipynb): For cleaning the P-3 aircraft met/nav .ict data files using a read routine adapted from the IMPACTS Github repository. Cleaned data is saved as .nc files. Manual inspection/selection of the raw PHIPS images was necessary for cleaning the image dataset, hence why no cleaning notebook for it is provided. Please refer to the README.md under data/clean/ that describes in detail the manual selection process for the images.
-- 
+  
 - [prepare_AI_ready_data_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/prepare_AI_ready_data_PHIPS.ipynb): For reading in the cleaned PHIPS image data and the P-3 aircraft met/nav data and constructing an xarray.Dataset with the images converted to numpy arrays and appropriate meta data attributes included from the P-3 met/nav dataset. This AI-ready dataset is saved as a NetCDF file and manually uploaded to Google Drive as opposed to Github due to repository storage constraints. Please refer to the README.md in data/ai_ready/ for downloading the dataset.
-- 
+  
 - [EDA_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/EDA_PHIPS.ipynb): For exploring the structure and key statistical characteristcs of the "PHIPS_CrystalHabitAI_Dataset.nc" AI-ready dataset. Basic statistics of the pixel intensities across all the PHIPS images are inspected, along with a correlation matrix that explores linear relationshps between image intensity and other data attributes such as habit type and temperature.
-- 
+  
 - [dimensionality_reduction_PHIPS.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/dimensionality_reduction_PHIPS.ipynb): For analyzingthe dimensions of the "PHIPS_CrystalHabitAI_Dataset.nc" AI-ready dataset and implementing linear (Principle Component Analysis, PCA) and non-linear (t-Distributed Stochastic Neighbor Embedding, t-SNE) dimension reduction techniques to tease out linear and non-linear relationships, respectively, in the data.
