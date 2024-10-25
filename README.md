@@ -1,11 +1,20 @@
 # MLGEO2024_Snowflake_Classification
-### Contributors: Valeria Garcia (ESS 569) and Carlos Palma Bernal (ESS 469)
+#### Contributors: Valeria Garcia (ESS 569) and Carlos Palma Bernal (ESS 469)
 
-This repository is for the UW-MLGEO 2024 final project.
+## Project Overview
+The "MLGEO2024_Snowflake_Classification" project aims to develop a robust AI algorithm utilizing Convolutional Neural Networks (CNNs) to identify and classify high-resolution ice crystal images according to snowflake type. This initiative seeks to automate the classification process, which is traditionally carried out manually—a method that is often time-consuming, prone to human error, and lacks reproducibility.
 
-### **Data Source:**
+### **Importance of Snowflake Classification**
+Snowflake classification is vital for understanding microphyscial processes occurring within winter storms, which has implications for snowfall accumulation. By providing a reliable, objective classification system, this project will enhance the scientific community's ability to study and interpret snow microphysics, which plays a crucial role in winter weather systems.
 
-This project will leverage ice crystal images (in PNG format) photographed by the Particle Habit Imaging and Polar Scattering Probe (PHIPS) during the Investigation of Microphysics and Precipitation in Atlantic Coast-Threatening Snowstorms (IMPACTS) for both the training and testing datasets. IMPACTS was a NASA field campaign focused on studying winter storms during the 2020, 2022, and 2023 winter seasons (January-February), using aircraft to collect microphysical and remote sensing observations across multiple U.S. northeastern and Midwestern winter storms. Along with the ice crystal images, meteorological and navigation data from the P-3 aircraft (on which the PHIPS was onboard) will be used to provide temperature and spatial/geographic information for the ice crystals images. 
+### **Objectives**
+The primary objectives of this project include:
+* **Automating Classification**: Replace manual snowflake classification with a machine learning-based algorithm to improve efficiency and accuracy.
+* **Data-Driven Insights**: Leverage statistical analyses and visualizations to gain insights into the characteristics and distributions of different ice crystal types. 
+
+## **Data Source:**
+
+This project will utilize ice crystal images (in PNG format) photographed by the Particle Habit Imaging and Polar Scattering Probe (PHIPS) during the Investigation of Microphysics and Precipitation in Atlantic Coast-Threatening Snowstorms (IMPACTS) for both the training and testing datasets. IMPACTS was a NASA field campaign focused on studying winter storms during the 2020, 2022, and 2023 winter seasons (January-February), using aircraft to collect microphysical and remote sensing observations across multiple U.S. northeastern and Midwestern winter storms. Along with the ice crystal images, meteorological and navigation data from the P-3 aircraft (on which the PHIPS was onboard) will be used to provide temperature and spatial/geographic information for the ice crystals images. 
 
 <img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/IMPACTS_logo.png" alt="IMPACTS logo" width="300"> <img src="https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/PHIPS_instrument.png" alt="PHIPS Instrument" width="425">
 
@@ -22,23 +31,17 @@ For curating the training dataset of this project, ice crystal images from the f
   * Format: ICARTT (.ict)
     * ICARTT files: an ICARTT file is a text-based format for atmospheric research data, developed to ensure consistency in data sharing. It contains tabular data and headers with information on measurements, units, instruments, and data quality. Lengthy documentation on the ICARTT file format standards can be found [here](https://www.earthdata.nasa.gov/s3fs-public/imported/ESDS-RFC-029v2.pdf)
 
-### **Registering for a NASA Earthdata Login Profile:**
-
-To download the IMPACTS P-3 met/nav data on the NASA Global Hydrometeorology Resource (GCHR) website, an Earthdata Login profile is needed. Registering is free and can be done [here](https://urs.earthdata.nasa.gov/users/new?client_id=OLpAZlE4HqIOMr0TYqg7UQ&redirect_uri=https%3A%2F%2Fd53njncz5taqi.cloudfront.net%2Furs_callback&response_type=code&state=https%3A%2F%2Fsearch.earthdata.nasa.gov%2Fsearch%3Fq%3Dp3metnavimpacts%26ee%3Dprod)
-
-### **Project Objectives:**
-To create an AI algorithm (Convolutional Neural Network, CCN) to identify and classify thousands of high-resolution ice crystal images according to snowflake type (i.e. to create an ML-based ice crystal habit classification algorithm). The goal is for this alogorithm to replace manual snowflake classification in research studies, a tedious approach that is unreproducible and subject to human error, in order to provide an objective, reliable solution for identifying ice crystals of popular interest in snow microphysics studies, such as dendrites. 
-
 ## Getting Started 
 
-To get started with the "MLGEO2024_Snowflake_Classification" project, follow these steps to clone the repository and set up the environment.
+To get started with the "MLGEO2024_Snowflake_Classification" project, follow these steps:
 
 ### **Prerequisites:**
 * `Python 3.9.12` or later
 * Conda for managing dependencies (recommended)
 * Git cloning the repository
+* An NASA Earthdata Login Profile (for downloading data)
 
-### **1. Cloning the repository**
+### **1. Clone the repository**
 Start by cloning the repository to your local machine:
 ```bash 
 git clone https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification.git
@@ -52,8 +55,12 @@ conda activate snow_classification_env
 ```
 This will install all required packages, including libraries for data processing, machine learning, and visualization.
 
+### **3. Register for a NASA Earthdata Login Profile**
 
-### **Descriptions of the Python notebooks in this repository:**
+To download the IMPACTS P-3 met/nav data on the NASA Global Hydrometeorology Resource (GCHR) website, an Earthdata Login profile is needed. Registering is free and can be done [here](https://urs.earthdata.nasa.gov/users/new?client_id=OLpAZlE4HqIOMr0TYqg7UQ&redirect_uri=https%3A%2F%2Fd53njncz5taqi.cloudfront.net%2Furs_callback&response_type=code&state=https%3A%2F%2Fsearch.earthdata.nasa.gov%2Fsearch%3Fq%3Dp3metnavimpacts%26ee%3Dprod)
+
+## Descriptions of the Python notebooks in this repository
+
 - [download_data_NASA_GHRC.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/download_data_NASA_GHRC.ipynb): Instructions for locally downloading from the NASA GHRC website the folders containing the raw PHIPS images (in .PNG format), as well as the .ict files for the P-3 aircraft meteorological/navigational datasets. Due to the large size of the raw PHIPS image data, it is recommended to run the download prompts in the command line.
   
 - [cleaning_data_P3_nav.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/cleaning_data_P3_nav.ipynb): For cleaning the P-3 aircraft met/nav .ict data files using a read routine adapted from the [IMPACTS Github repository](https://github.com/joefinlon/impacts_tools.git). Cleaned data is saved as NetCDF files. Manual inspection/selection of the raw PHIPS images was necessary for cleaning the image dataset, hence why no cleaning notebook for it is provided. Please refer to the README.md under `data/clean/` that describes in detail the manual selection process for the images.
