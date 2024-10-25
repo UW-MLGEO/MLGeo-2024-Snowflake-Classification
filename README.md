@@ -40,4 +40,4 @@ Activate this environment before running notebooks and scripts
 conda activate snow_classification_env
 ```
 ### **About the Python notebooks in this repository:**
-<insert "High-level description of each script/notebook" >
+- [download_data_NASA_GHRC.ipynb](https://github.com/UW-MLGEO/MLGEO2024_Snowflake_Classification/blob/main/notebooks/download_data_NASA_GHRC.ipynb): For downloading the folders containing the IMPACTS raw PHIPS images (in .PNG format), as well as the .ict files for the P-3 aircraft meteorological/navigational datasets directly from the NASA GHRC website. Due to the size of the raw PHIP image data, it is recommended to run the download prompts in the command line. 
