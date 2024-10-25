@@ -15,7 +15,7 @@ For curating the training dataset of this project, ice crystal images from the f
 * PHIPS ice crystal dataset
   * Consists of ice crystal images in .PNG format, imaged in-cloud
   * Sampling rate: 1 Hz for duration of flight
-  * Note: Due to storage constraints in this repository, the raw PHIPS image files were not included in data/raw/
+  * Note: Due to storage constraints in this repository, the raw PHIPS image files were not included in `data/raw/`
 * P-3 aircraft meteorological/navigation dataset
   * Contains time-series numerical data including geographic (e.g. latitude, longitude coordinates), meteorological (e.g. temperature, dewpoint, wind speed) and altitude data (e.g. altitude, pitch, roll, yaw) reported from the P-3 aircraft during each flight
   * Sampling rate: 1 Hz for duration of flight
