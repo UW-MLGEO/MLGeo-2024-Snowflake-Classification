@@ -12,6 +12,7 @@ The primary objectives of this project include:
 * **Automating Classification**: Replace manual snowflake classification with a machine learning-based algorithm to improve efficiency and accuracy.
 * **Data-Driven Insights**: Leverage statistical analyses and visualizations to gain insights into the characteristics and distributions of different ice crystal types. 
 
+
 ## **Data Source:**
 
 This project will utilize ice crystal images (in PNG format) photographed by the Particle Habit Imaging and Polar Scattering Probe (PHIPS) during the Investigation of Microphysics and Precipitation in Atlantic Coast-Threatening Snowstorms (IMPACTS) for both the training and testing datasets. IMPACTS was a NASA field campaign focused on studying winter storms during the 2020, 2022, and 2023 winter seasons (January-February), using aircraft to collect microphysical and remote sensing observations across multiple U.S. northeastern and Midwestern winter storms. Along with the ice crystal images, meteorological and navigation data from the P-3 aircraft (on which the PHIPS was onboard) will be used to provide temperature and spatial/geographic information for the ice crystals images. 
@@ -30,6 +31,7 @@ For curating the training dataset of this project, ice crystal images from the f
   * Sampling rate: 1 Hz for duration of flight
   * Format: ICARTT (.ict)
     * ICARTT files: an ICARTT file is a text-based format for atmospheric research data, developed to ensure consistency in data sharing. It contains tabular data and headers with information on measurements, units, instruments, and data quality. Lengthy documentation on the ICARTT file format standards can be found [here](https://www.earthdata.nasa.gov/s3fs-public/imported/ESDS-RFC-029v2.pdf)
+
 
 ## Getting Started 
 
@@ -58,6 +60,7 @@ This will install all required packages, including libraries for data processing
 ### **3. Register for a NASA Earthdata Login Profile**
 
 To download the IMPACTS P-3 met/nav data on the NASA Global Hydrometeorology Resource (GCHR) website, an Earthdata Login profile is needed. Registering is free and can be done [here](https://urs.earthdata.nasa.gov/users/new?client_id=OLpAZlE4HqIOMr0TYqg7UQ&redirect_uri=https%3A%2F%2Fd53njncz5taqi.cloudfront.net%2Furs_callback&response_type=code&state=https%3A%2F%2Fsearch.earthdata.nasa.gov%2Fsearch%3Fq%3Dp3metnavimpacts%26ee%3Dprod)
+
 
 ## Descriptions of the Python notebooks in this repository
 
