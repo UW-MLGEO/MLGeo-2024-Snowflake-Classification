@@ -1,6 +1,6 @@
 # Research Project Relevance
 
-The goal of the snowflake classification project is to identify and categorize images of ice crystals sampled by the Particle Habit Imaging and Polar Scattering Probe (PHIPS) during the NASA IMPACTS field campaign. The images are complemented by temperature and the spatial/geographic information recorded at the time imaging. This is a classic example of a classification problem, as it requires organizing observations from different categories into several well-defined groups based on their features. 
+The goal of the snowflake classification project is to identify and categorize images of ice crystals sampled by the Particle Habit Imaging and Polar Scattering Probe (PHIPS) during the NASA IMPACTS field campaign. The images are complemented by temperature and spatial/geographic information recorded at the time imaging. This is a classic example of a classification problem, as it requires organizing observations from different categories into several well-defined groups based on their features. 
 
 Although clustering will be used for exploratory analysis, the focus of the project is on supervised learning, as images in the training data set have labels that identify them as members of one class. Testing images will also have labels for evaluating the accuracy of the algorithm, but, as in other supervised learning methods, these are not available for the algorithm during training to prevent known results from influencing the classification.
 
