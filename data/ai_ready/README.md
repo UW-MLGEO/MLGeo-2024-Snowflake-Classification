@@ -6,7 +6,7 @@ Size: 584.4 MB
 
 Format: NetCDF
 
-Due to the size of the dataset exceeding 100 MB, it was unable to be directly uploaded to Github in data/ai_ready. Instead, the dataset is uploaded and shared on Google Drive. It can be downloaded automatically by clicking [here](https://drive.google.com/uc?id=1gnfZpiBP954-qddiRfEZInfuAoMI7Y__). 
+Due to the size of the dataset exceeding 100 MB, it was unable to be directly uploaded to Github in `data/ai_ready/`. Instead, the dataset is uploaded and shared on Google Drive. It can be downloaded automatically by clicking [here](https://drive.google.com/uc?id=1gnfZpiBP954-qddiRfEZInfuAoMI7Y__). 
 
 The dataset contains the following variables:
 
