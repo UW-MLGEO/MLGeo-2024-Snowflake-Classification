@@ -1,4 +1,4 @@
-# MLGEO2024_Snowflake_Classification
+# MLGEO2024_Snowflake_Classification Repository
 #### Contributors: Valeria Garcia (ESS 569) and Carlos Palma Bernal (ESS 469)
 
 ## Project Overview
